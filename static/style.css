@@ -1,0 +1,142 @@
+/* ======== ESTILOS GENERALES ======== */
+
+body{
+    background:#f5f7fb;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-weight:bold;
+    color:#0d6efd;
+}
+
+/* ======== TARJETAS ======== */
+
+.card{
+    border:none;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+}
+
+/* ======== FORMULARIO ======== */
+
+.card-header{
+    font-weight:bold;
+}
+
+.form-control,
+.form-select{
+    border-radius:8px;
+}
+
+.form-control:focus,
+.form-select:focus{
+    box-shadow:0 0 8px rgba(13,110,253,.35);
+}
+
+/* ======== BOTONES ======== */
+
+.btn{
+    border-radius:8px;
+}
+
+.btn-primary{
+    padding:10px 20px;
+}
+
+.btn-warning,
+.btn-danger{
+    margin-right:5px;
+}
+
+/* ======== TABLA ======== */
+
+table{
+    vertical-align:middle;
+}
+
+thead{
+    background:#0d6efd;
+    color:white;
+}
+
+tbody tr:hover{
+    background:#eef4ff;
+}
+
+/* ======== BADGES ======== */
+
+.badge{
+    font-size:.85rem;
+    padding:8px 12px;
+}
+
+/* Prioridades */
+
+.priority-alta{
+    background:#dc3545;
+}
+
+.priority-media{
+    background:#ffc107;
+    color:black;
+}
+
+.priority-baja{
+    background:#198754;
+}
+
+/* Estados */
+
+.status-pendiente{
+    background:#ffc107;
+    color:black;
+}
+
+.status-progreso{
+    background:#0d6efd;
+}
+
+.status-completada{
+    background:#198754;
+}
+
+/* ======== TAREAS VENCIDAS ======== */
+
+.task-overdue{
+    background:#ffe5e5 !important;
+}
+
+/* ======== DASHBOARD ======== */
+
+#totalTasks,
+#pendingTasks,
+#progressTasks,
+#completedTasks{
+    font-size:2rem;
+    font-weight:bold;
+}
+
+/* ======== RESPONSIVE ======== */
+
+@media (max-width:768px){
+
+    h1{
+        font-size:1.8rem;
+    }
+
+    .card{
+        margin-bottom:15px;
+    }
+
+    .btn{
+        width:100%;
+        margin-bottom:10px;
+    }
+
+}
